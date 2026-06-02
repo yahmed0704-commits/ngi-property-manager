@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "NGI Property Manager",
+    "slug": "ngi",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "ngi",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1B2B4B"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.nexusgrowth.propertyhub",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "NGI uses your camera to capture property photos for project documentation.",
+        "NSPhotoLibraryUsageDescription": "NGI accesses your photo library to attach property photos and documents.",
+        "NSPhotoLibraryAddUsageDescription": "NGI saves property photos to your photo library.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.nexusgrowth.ngimanager",
+      "versionCode": 2,
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "NGI accesses your photos to attach property photos and documents.",
+          "cameraPermission": "NGI uses your camera to capture property photos."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d23364e3-65a4-44d8-9d69-d6b242a0dc17"
+      }
+    },
+    "owner": "y.ahmed0704"
+  }
+}
